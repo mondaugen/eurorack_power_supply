@@ -131,12 +131,12 @@ tune for optimal\nripple current
 $Comp
 L Device:C C?
 U 1 1 5CA3B718
-P 4300 2600
-F 0 "C?" H 4415 2646 50  0000 L CNN
-F 1 "4.7uF" H 4415 2555 50  0000 L CNN
-F 2 "" H 4338 2450 50  0001 C CNN
-F 3 "~" H 4300 2600 50  0001 C CNN
-	1    4300 2600
+P 4300 2700
+F 0 "C?" H 4415 2746 50  0000 L CNN
+F 1 "4.7uF" H 4415 2655 50  0000 L CNN
+F 2 "" H 4338 2550 50  0001 C CNN
+F 3 "~" H 4300 2700 50  0001 C CNN
+	1    4300 2700
 	1    0    0    -1  
 $EndComp
 Text Notes 2050 2100 0    50   ~ 0
@@ -168,12 +168,12 @@ resistors set output voltage to ~~12V
 $Comp
 L Device:C C?
 U 1 1 5CA3CF00
-P 4950 2100
-F 0 "C?" V 5202 2100 50  0000 C CNN
-F 1 "4.7uF 50V" V 5111 2100 50  0000 C CNN
-F 2 "" H 4988 1950 50  0001 C CNN
-F 3 "~" H 4950 2100 50  0001 C CNN
-	1    4950 2100
+P 4800 1250
+F 0 "C?" V 5052 1250 50  0000 C CNN
+F 1 "4.7uF 50V" V 4961 1250 50  0000 C CNN
+F 2 "" H 4838 1100 50  0001 C CNN
+F 3 "~" H 4800 1250 50  0001 C CNN
+	1    4800 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -208,17 +208,6 @@ F 2 "" H 5950 1250 50  0001 C CNN
 F 3 "~" H 5950 1250 50  0001 C CNN
 	1    5950 1250
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:L_Coupled L?
-U 1 1 5CA3D989
-P 4800 1450
-F 0 "L?" V 4846 1262 50  0000 R CNN
-F 1 "COILTRONICS DRQ127-150" V 4755 1262 50  0000 R CNN
-F 2 "" H 4800 1450 50  0001 C CNN
-F 3 "~" H 4800 1450 50  0001 C CNN
-	1    4800 1450
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	3300 4400 3900 4400
@@ -287,24 +276,7 @@ Wire Wire Line
 	2450 1250 3100 1250
 Connection ~ 2450 1250
 Wire Wire Line
-	3100 1250 4100 1250
-Wire Wire Line
-	4100 1250 4100 3150
-Connection ~ 3100 1250
-Wire Wire Line
-	4100 1250 4700 1250
-Connection ~ 4100 1250
-Wire Wire Line
-	4700 1650 4700 2100
-Wire Wire Line
 	6100 1250 6300 1250
-Wire Wire Line
-	7100 1700 7100 1550
-Wire Wire Line
-	6300 1550 6300 1700
-Connection ~ 6300 1700
-Wire Wire Line
-	6300 1700 7100 1700
 Connection ~ 6300 1250
 Wire Wire Line
 	6300 1250 7100 1250
@@ -319,19 +291,6 @@ Wire Wire Line
 	4400 4300 1650 4300
 Wire Wire Line
 	1650 4300 1650 4050
-$Comp
-L power:Earth #PWR?
-U 1 1 5CA56ACC
-P 6300 1950
-F 0 "#PWR?" H 6300 1700 50  0001 C CNN
-F 1 "Earth" H 6300 1800 50  0001 C CNN
-F 2 "" H 6300 1950 50  0001 C CNN
-F 3 "~" H 6300 1950 50  0001 C CNN
-	1    6300 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 1700 6300 1950
 Wire Wire Line
 	2700 5650 3100 5650
 Connection ~ 4100 5650
@@ -345,7 +304,6 @@ Wire Wire Line
 	4700 3050 5000 3050
 Wire Wire Line
 	5000 3050 5000 3150
-Connection ~ 4700 3050
 Wire Wire Line
 	4700 3050 4700 3150
 Wire Wire Line
@@ -387,11 +345,7 @@ Connection ~ 3100 5650
 Wire Wire Line
 	3100 5650 3300 5650
 Wire Wire Line
-	4300 2400 4300 2450
-Wire Wire Line
-	4300 2750 4300 3150
-Wire Wire Line
-	5800 2400 5800 5650
+	5800 2550 5800 5650
 Wire Wire Line
 	5800 5650 5200 5650
 Connection ~ 5200 5650
@@ -416,16 +370,13 @@ Connection ~ 4900 5650
 Wire Wire Line
 	4900 5650 4600 5650
 Wire Wire Line
-	4300 2400 4650 2400
-Wire Wire Line
 	4500 3150 4500 3050
 Wire Wire Line
 	4500 3050 4650 3050
 Wire Wire Line
-	4650 3050 4650 2400
-Connection ~ 4650 2400
+	4650 3050 4650 2550
 Wire Wire Line
-	4650 2400 5800 2400
+	4650 2550 5800 2550
 Text GLabel 7400 1250 2    50   Input ~ 0
 Vout12V
 Wire Wire Line
@@ -439,56 +390,90 @@ Connection ~ 1650 4300
 Text GLabel 1350 1250 0    50   Input ~ 0
 Vin2.5-24V
 Wire Wire Line
-	4700 2100 4800 2100
-Connection ~ 4700 2100
-Wire Wire Line
-	4700 2100 4700 3050
-Wire Wire Line
-	5100 2100 5200 2100
-Wire Wire Line
-	5200 2100 5200 1800
-Wire Wire Line
-	5200 1250 5800 1250
-Wire Wire Line
-	4950 1700 4950 1250
-Wire Wire Line
-	4950 1250 4900 1250
-Wire Wire Line
-	4900 1800 5200 1800
-Wire Wire Line
-	4900 1650 4900 1800
-Connection ~ 5200 1800
-Wire Wire Line
-	5200 1800 5200 1250
-Wire Wire Line
-	4200 2900 6100 2900
-Wire Wire Line
 	6100 2900 6100 1250
 Connection ~ 4200 2900
 Connection ~ 6100 1250
-Wire Notes Line
-	4750 2250 5400 2250
-Wire Notes Line
-	5400 2250 5400 1350
-Wire Notes Line
-	5400 1350 6850 1350
-Wire Notes Line
-	6850 1350 6850 1650
-Wire Notes Line
-	6850 1650 5250 1650
-Text Notes 6600 1800 0    50   ~ 0
+Text Notes 6400 1650 0    50   ~ 0
 high di/dt loop
-Wire Notes Line
-	5250 2850 4750 2850
-Wire Notes Line
-	4750 2850 4750 2250
-Wire Notes Line
-	5250 1650 5250 2850
+$Comp
+L coiltronics:DRQ127-150 L?
+U 1 1 5CAC7253
+P 3950 1000
+F 0 "L?" H 3950 1065 50  0000 C CNN
+F 1 "DRQ127-150" H 3950 974 50  0000 C CNN
+F 2 "" H 3950 1000 50  0001 C CNN
+F 3 "" H 3950 1000 50  0001 C CNN
+	1    3950 1000
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5300 1700 4950 1700
+	3100 1250 3350 1250
+Connection ~ 3100 1250
 Wire Wire Line
-	6300 1700 5300 1700
-Connection ~ 5300 1700
+	4550 1250 4650 1250
 Wire Wire Line
-	5300 1700 5300 3150
+	3350 1250 3350 1350
+Wire Wire Line
+	3350 1350 4100 1350
+Wire Wire Line
+	4100 1350 4100 3150
+Connection ~ 3350 1250
+Wire Wire Line
+	4550 1250 4550 1500
+Wire Wire Line
+	4550 1500 4700 1500
+Wire Wire Line
+	4700 1500 4700 3050
+Connection ~ 4550 1250
+Connection ~ 4700 3050
+$Comp
+L coiltronics:DRQ127-150 L?
+U 2 1 5CAE6147
+P 4850 1850
+F 0 "L?" H 4850 1915 50  0000 C CNN
+F 1 "DRQ127-150" H 4850 1824 50  0000 C CNN
+F 2 "" H 4850 1850 50  0001 C CNN
+F 3 "" H 4850 1850 50  0001 C CNN
+	2    4850 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 1250 5100 1250
+Wire Wire Line
+	5100 1250 5800 1250
+Connection ~ 5100 1250
+Wire Wire Line
+	5100 2450 5200 2450
+Wire Wire Line
+	5200 2450 5200 3150
+Connection ~ 5200 3150
+Wire Wire Line
+	5500 3150 6300 3150
+Wire Wire Line
+	7100 1550 7100 3150
+Connection ~ 5500 3150
+Wire Wire Line
+	6300 1550 6300 3150
+Connection ~ 6300 3150
+Wire Wire Line
+	6300 3150 7100 3150
+Wire Wire Line
+	4200 2900 6100 2900
+Wire Wire Line
+	4300 2850 4300 3150
+Wire Wire Line
+	4650 2550 4300 2550
+Connection ~ 4650 2550
+$Comp
+L power:Earth #PWR?
+U 1 1 5CB1A9ED
+P 7100 3150
+F 0 "#PWR?" H 7100 2900 50  0001 C CNN
+F 1 "Earth" H 7100 3000 50  0001 C CNN
+F 2 "" H 7100 3150 50  0001 C CNN
+F 3 "~" H 7100 3150 50  0001 C CNN
+	1    7100 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 3150
 $EndSCHEMATC

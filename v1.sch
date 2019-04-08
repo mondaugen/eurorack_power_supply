@@ -4,8 +4,8 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
-Title "positive 12v supply"
+Sheet 1 5
+Title "eurorack power supply"
 Date ""
 Rev ""
 Comp ""
@@ -14,466 +14,52 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L lt3959:LT3959 U?
-U 1 1 5CA24E3C
-P 4000 3800
-F 0 "U?" H 4100 4000 60  0000 C CNN
-F 1 "LT3959" H 4100 4100 60  0000 C CNN
-F 2 "" H 3800 3800 60  0001 C CNN
-F 3 "" H 3800 3800 60  0001 C CNN
-	1    4000 3800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5CA3ADD9
-P 2450 1400
-F 0 "C?" H 2565 1446 50  0000 L CNN
-F 1 "22uF 50V" H 2565 1355 50  0000 L CNN
-F 2 "" H 2488 1250 50  0001 C CNN
-F 3 "~" H 2450 1400 50  0001 C CNN
-	1    2450 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5CA3AF96
-P 1800 1400
-F 0 "C?" H 1915 1446 50  0000 L CNN
-F 1 "22uF 50V" H 1915 1355 50  0000 L CNN
-F 2 "" H 1838 1250 50  0001 C CNN
-F 3 "~" H 1800 1400 50  0001 C CNN
-	1    1800 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CA3AFF9
-P 1650 3900
-F 0 "R?" H 1720 3946 50  0000 L CNN
-F 1 "150K" H 1720 3855 50  0000 L CNN
-F 2 "" V 1580 3900 50  0001 C CNN
-F 3 "~" H 1650 3900 50  0001 C CNN
-	1    1650 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CA3B0BD
-P 3100 1400
-F 0 "R?" H 3170 1446 50  0000 L CNN
-F 1 "124K" H 3170 1355 50  0000 L CNN
-F 2 "" V 3030 1400 50  0001 C CNN
-F 3 "~" H 3100 1400 50  0001 C CNN
-	1    3100 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CA3B144
-P 3100 2000
-F 0 "R?" H 3170 2046 50  0000 L CNN
-F 1 "121K" H 3170 1955 50  0000 L CNN
-F 2 "" V 3030 2000 50  0001 C CNN
-F 3 "~" H 3100 2000 50  0001 C CNN
-	1    3100 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CA3B2E1
-P 4600 5500
-F 0 "R?" H 4670 5546 50  0000 L CNN
-F 1 "27.4K" H 4670 5455 50  0000 L CNN
-F 2 "" V 4530 5500 50  0001 C CNN
-F 3 "~" H 4600 5500 50  0001 C CNN
-	1    4600 5500
-	1    0    0    -1  
-$EndComp
-Text Notes 4300 5900 0    50   ~ 0
-gives 300KHz switching speed
-$Comp
-L Device:C C?
-U 1 1 5CA3B475
-P 4100 5500
-F 0 "C?" H 3985 5546 50  0000 R CNN
-F 1 "0.1uF" H 3985 5455 50  0000 R CNN
-F 2 "" H 4138 5350 50  0001 C CNN
-F 3 "~" H 4100 5500 50  0001 C CNN
-	1    4100 5500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CA3B501
-P 3300 4550
-F 0 "R?" H 3370 4596 50  0000 L CNN
-F 1 "7.5K" H 3370 4505 50  0000 L CNN
-F 2 "" V 3230 4550 50  0001 C CNN
-F 3 "~" H 3300 4550 50  0001 C CNN
-	1    3300 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5CA3B5B0
-P 3300 4850
-F 0 "C?" H 3415 4896 50  0000 L CNN
-F 1 "22nF" H 3415 4805 50  0000 L CNN
-F 2 "" H 3338 4700 50  0001 C CNN
-F 3 "~" H 3300 4850 50  0001 C CNN
-	1    3300 4850
-	1    0    0    -1  
-$EndComp
-Text Notes 3350 5200 0    50   ~ 0
-tune for optimal\nripple current
-$Comp
-L Device:C C?
-U 1 1 5CA3B718
-P 4300 2700
-F 0 "C?" H 4415 2746 50  0000 L CNN
-F 1 "4.7uF" H 4415 2655 50  0000 L CNN
-F 2 "" H 4338 2550 50  0001 C CNN
-F 3 "~" H 4300 2700 50  0001 C CNN
-	1    4300 2700
-	1    0    0    -1  
-$EndComp
-Text Notes 2050 2100 0    50   ~ 0
-rising on threshold 2.8V\nfalling off threshold 2.5V 
-$Comp
-L Device:R R?
-U 1 1 5CA3C9EF
-P 2700 5100
-F 0 "R?" H 2770 5146 50  0000 L CNN
-F 1 "105K" H 2770 5055 50  0000 L CNN
-F 2 "" V 2630 5100 50  0001 C CNN
-F 3 "~" H 2700 5100 50  0001 C CNN
-	1    2700 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CA3CA90
-P 2700 5500
-F 0 "R?" H 2770 5546 50  0000 L CNN
-F 1 "15.8K" H 2770 5455 50  0000 L CNN
-F 2 "" V 2630 5500 50  0001 C CNN
-F 3 "~" H 2700 5500 50  0001 C CNN
-	1    2700 5500
-	1    0    0    -1  
-$EndComp
-Text Notes 2200 5800 0    50   ~ 0
-resistors set output voltage to ~~12V
-$Comp
-L Device:C C?
-U 1 1 5CA3CF00
-P 4800 1250
-F 0 "C?" V 5052 1250 50  0000 C CNN
-F 1 "4.7uF 50V" V 4961 1250 50  0000 C CNN
-F 2 "" H 4838 1100 50  0001 C CNN
-F 3 "~" H 4800 1250 50  0001 C CNN
-	1    4800 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5CA3D118
-P 6300 1400
-F 0 "C?" H 6415 1446 50  0000 L CNN
-F 1 "47uF 16V X5R" H 6415 1355 50  0000 L CNN
-F 2 "" H 6338 1250 50  0001 C CNN
-F 3 "~" H 6300 1400 50  0001 C CNN
-	1    6300 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5CA3D305
-P 7100 1400
-F 0 "C?" H 7215 1446 50  0000 L CNN
-F 1 "47uF 16V X5R" H 7215 1355 50  0000 L CNN
-F 2 "" H 7138 1250 50  0001 C CNN
-F 3 "~" H 7100 1400 50  0001 C CNN
-	1    7100 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D?
-U 1 1 5CA3D4E1
-P 5950 1250
-F 0 "D?" H 5950 1466 50  0000 C CNN
-F 1 "VISHAY 6CWQ06FN" H 5950 1375 50  0000 C CNN
-F 2 "" H 5950 1250 50  0001 C CNN
-F 3 "~" H 5950 1250 50  0001 C CNN
-	1    5950 1250
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 4400 3900 4400
-Wire Wire Line
-	2700 5250 2700 5300
-Wire Wire Line
-	2700 5300 4000 5300
-Wire Wire Line
-	4000 5300 4000 4200
-Connection ~ 2700 5300
-Wire Wire Line
-	2700 5300 2700 5350
-Wire Wire Line
-	3900 4200 3900 4400
-Wire Wire Line
-	2700 2900 4200 2900
-Wire Wire Line
-	4200 2900 4200 3150
-Wire Wire Line
-	2700 2900 2700 4950
-Wire Wire Line
-	4100 4200 4100 5350
-Wire Wire Line
-	4200 4200 4200 4900
-Wire Wire Line
-	4200 4900 4600 4900
-Wire Wire Line
-	4600 4900 4600 5350
-Wire Wire Line
-	3100 1550 3100 1700
-Wire Wire Line
-	3100 1700 4000 1700
-Wire Wire Line
-	4000 1700 4000 3150
-Connection ~ 3100 1700
-Wire Wire Line
-	3100 1700 3100 1850
-$Comp
-L power:Earth #PWR?
-U 1 1 5CA45ADC
-P 1800 1550
-F 0 "#PWR?" H 1800 1300 50  0001 C CNN
-F 1 "Earth" H 1800 1400 50  0001 C CNN
-F 2 "" H 1800 1550 50  0001 C CNN
-F 3 "~" H 1800 1550 50  0001 C CNN
-	1    1800 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 5CA46D51
-P 2450 1550
-F 0 "#PWR?" H 2450 1300 50  0001 C CNN
-F 1 "Earth" H 2450 1400 50  0001 C CNN
-F 2 "" H 2450 1550 50  0001 C CNN
-F 3 "~" H 2450 1550 50  0001 C CNN
-	1    2450 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 1250 1650 1250
-Wire Wire Line
-	1800 1250 2450 1250
-Connection ~ 1800 1250
-Wire Wire Line
-	2450 1250 3100 1250
-Connection ~ 2450 1250
-Wire Wire Line
-	6100 1250 6300 1250
-Connection ~ 6300 1250
-Wire Wire Line
-	6300 1250 7100 1250
-Wire Wire Line
-	1650 3750 1650 1250
-Connection ~ 1650 1250
-Wire Wire Line
-	1650 1250 1800 1250
-Wire Wire Line
-	4400 4200 4400 4300
-Wire Wire Line
-	4400 4300 1650 4300
-Wire Wire Line
-	1650 4300 1650 4050
-Wire Wire Line
-	2700 5650 3100 5650
-Connection ~ 4100 5650
-Connection ~ 4600 5650
-Wire Wire Line
-	3300 5000 3300 5650
-Connection ~ 3300 5650
-Wire Wire Line
-	3300 5650 4100 5650
-Wire Wire Line
-	4700 3050 5000 3050
-Wire Wire Line
-	5000 3050 5000 3150
-Wire Wire Line
-	4700 3050 4700 3150
-Wire Wire Line
-	5000 3050 5600 3050
-Wire Wire Line
-	5600 3050 5600 4300
-Wire Wire Line
-	5600 4300 5000 4300
-Wire Wire Line
-	4700 4300 4700 4200
-Connection ~ 5000 3050
-Wire Wire Line
-	5000 4200 5000 4300
-Connection ~ 5000 4300
-Wire Wire Line
-	5000 4300 4700 4300
-Wire Wire Line
-	5200 4200 5200 5650
-Wire Wire Line
-	5200 5650 5100 5650
-Wire Wire Line
-	5200 3150 5300 3150
-Wire Wire Line
-	5300 3150 5400 3150
-Connection ~ 5300 3150
-Wire Wire Line
-	5400 3150 5500 3150
-Wire Wire Line
-	5500 3150 5500 4200
-Wire Wire Line
-	5500 4200 5400 4200
-Connection ~ 5400 3150
-Wire Wire Line
-	5400 4200 5300 4200
-Connection ~ 5400 4200
-Wire Wire Line
-	3100 2150 3100 5650
-Connection ~ 3100 5650
-Wire Wire Line
-	3100 5650 3300 5650
-Wire Wire Line
-	5800 2550 5800 5650
-Wire Wire Line
-	5800 5650 5200 5650
-Connection ~ 5200 5650
-Wire Wire Line
-	4100 5650 4600 5650
-Wire Wire Line
-	4500 4200 4500 4500
-Wire Wire Line
-	4500 4500 5100 4500
-Wire Wire Line
-	5100 4500 5100 5650
-Connection ~ 5100 5650
-Wire Wire Line
-	5100 5650 4900 5650
-Wire Wire Line
-	4300 4200 4300 4600
-Wire Wire Line
-	4300 4600 4900 4600
-Wire Wire Line
-	4900 4600 4900 5650
-Connection ~ 4900 5650
-Wire Wire Line
-	4900 5650 4600 5650
-Wire Wire Line
-	4500 3150 4500 3050
-Wire Wire Line
-	4500 3050 4650 3050
-Wire Wire Line
-	4650 3050 4650 2550
-Wire Wire Line
-	4650 2550 5800 2550
-Text GLabel 7400 1250 2    50   Input ~ 0
-Vout12V
-Wire Wire Line
-	7100 1250 7400 1250
-Connection ~ 7100 1250
-Text GLabel 1350 4300 0    50   Input ~ 0
-~PGOOD12V
-Wire Wire Line
-	1350 4300 1650 4300
-Connection ~ 1650 4300
-Text GLabel 1350 1250 0    50   Input ~ 0
-Vin2.5-24V
-Wire Wire Line
-	6100 2900 6100 1250
-Connection ~ 4200 2900
-Connection ~ 6100 1250
-Text Notes 6400 1650 0    50   ~ 0
-high di/dt loop
-$Comp
-L coiltronics:DRQ127-150 L?
-U 1 1 5CAC7253
-P 3950 1000
-F 0 "L?" H 3950 1065 50  0000 C CNN
-F 1 "DRQ127-150" H 3950 974 50  0000 C CNN
-F 2 "" H 3950 1000 50  0001 C CNN
-F 3 "" H 3950 1000 50  0001 C CNN
-	1    3950 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 1250 3350 1250
-Connection ~ 3100 1250
-Wire Wire Line
-	4550 1250 4650 1250
-Wire Wire Line
-	3350 1250 3350 1350
-Wire Wire Line
-	3350 1350 4100 1350
-Wire Wire Line
-	4100 1350 4100 3150
-Connection ~ 3350 1250
-Wire Wire Line
-	4550 1250 4550 1500
-Wire Wire Line
-	4550 1500 4700 1500
-Wire Wire Line
-	4700 1500 4700 3050
-Connection ~ 4550 1250
-Connection ~ 4700 3050
-$Comp
-L coiltronics:DRQ127-150 L?
-U 2 1 5CAE6147
-P 4850 1850
-F 0 "L?" H 4850 1915 50  0000 C CNN
-F 1 "DRQ127-150" H 4850 1824 50  0000 C CNN
-F 2 "" H 4850 1850 50  0001 C CNN
-F 3 "" H 4850 1850 50  0001 C CNN
-	2    4850 1850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4950 1250 5100 1250
-Wire Wire Line
-	5100 1250 5800 1250
-Connection ~ 5100 1250
-Wire Wire Line
-	5100 2450 5200 2450
-Wire Wire Line
-	5200 2450 5200 3150
-Connection ~ 5200 3150
-Wire Wire Line
-	5500 3150 6300 3150
-Wire Wire Line
-	7100 1550 7100 3150
-Connection ~ 5500 3150
-Wire Wire Line
-	6300 1550 6300 3150
-Connection ~ 6300 3150
-Wire Wire Line
-	6300 3150 7100 3150
-Wire Wire Line
-	4200 2900 6100 2900
-Wire Wire Line
-	4300 2850 4300 3150
-Wire Wire Line
-	4650 2550 4300 2550
-Connection ~ 4650 2550
-$Comp
-L power:Earth #PWR?
-U 1 1 5CB1A9ED
-P 7100 3150
-F 0 "#PWR?" H 7100 2900 50  0001 C CNN
-F 1 "Earth" H 7100 3000 50  0001 C CNN
-F 2 "" H 7100 3150 50  0001 C CNN
-F 3 "~" H 7100 3150 50  0001 C CNN
-	1    7100 3150
-	1    0    0    -1  
-$EndComp
-Connection ~ 7100 3150
+$Sheet
+S 1400 1350 1350 1200
+U 5CA65B33
+F0 "positive 12V supply" 50
+F1 "postive12Vsupply.sch" 50
+F2 "~PGOOD" I R 2750 1950 50 
+$EndSheet
+$Sheet
+S 3100 1350 1200 1250
+U 5CA63886
+F0 "negative 12V supply" 50
+F1 "negative12Vsupply.sch" 50
+F2 "~PGOOD" I R 4300 1950 50 
+$EndSheet
+$Sheet
+S 4500 1350 1200 1250
+U 5CB27250
+F0 "positive5Vsupply" 50
+F1 "positive5Vsupply.sch" 50
+F2 "~PGOOD" I R 5700 1900 50 
+$EndSheet
+$Sheet
+S 1400 2850 1300 1000
+U 5CB2E7EA
+F0 "power_io" 50
+F1 "power_io.sch" 50
+F2 "~PGOOD+12V" I R 2700 3200 50 
+F3 "~PGOOD-12V" I R 2700 3350 50 
+F4 "~PGOOD+5V" I R 2700 3500 50 
+$EndSheet
+Wire Wire Line
+	2750 1950 2950 1950
+Wire Wire Line
+	2950 1950 2950 3200
+Wire Wire Line
+	2950 3200 2700 3200
+Wire Wire Line
+	4300 1950 4400 1950
+Wire Wire Line
+	4400 1950 4400 3350
+Wire Wire Line
+	4400 3350 2700 3350
+Wire Wire Line
+	5700 1900 5800 1900
+Wire Wire Line
+	5800 1900 5800 3500
+Wire Wire Line
+	5800 3500 2700 3500
 $EndSCHEMATC

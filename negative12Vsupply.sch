@@ -93,7 +93,7 @@ Connection ~ 5400 5750
 Wire Wire Line
 	5400 4600 5400 5750
 Wire Wire Line
-	4800 4600 5400 4600
+	4800 4600 4900 4600
 Wire Wire Line
 	4800 4300 4800 4600
 Wire Wire Line
@@ -104,14 +104,14 @@ Connection ~ 5500 5750
 Wire Wire Line
 	5500 4300 5500 5750
 Wire Wire Line
-	5300 4400 5000 4400
+	5300 4400 5200 4400
 Wire Wire Line
 	5300 4300 5300 4400
 Wire Wire Line
 	5000 4400 5000 4300
 Connection ~ 5300 4400
 Wire Wire Line
-	5900 4400 5300 4400
+	5900 4400 5400 4400
 Connection ~ 3600 5750
 Wire Wire Line
 	3600 5100 3600 5750
@@ -215,40 +215,6 @@ Wire Wire Line
 Connection ~ 9600 3250
 Wire Wire Line
 	9600 1650 9600 3250
-$Comp
-L coiltronics:DRQ127-150 L?
-U 2 1 5CA63937
-P 8100 1100
-AR Path="/5CA63937" Ref="L?"  Part="2" 
-AR Path="/5CA65B33/5CA63937" Ref="L?"  Part="2" 
-AR Path="/5CA63886/5CA63937" Ref="L2"  Part="2" 
-F 0 "L2" H 8100 1165 50  0000 C CNN
-F 1 "DRQ127-150" H 8100 1074 50  0000 C CNN
-F 2 "eaton:eaton_drq127" H 8100 1100 50  0001 C CNN
-F 3 "" H 8100 1100 50  0001 C CNN
-	2    8100 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 1700 4400 3250
-Wire Wire Line
-	3900 1700 4400 1700
-Wire Wire Line
-	3900 1350 3900 1700
-$Comp
-L coiltronics:DRQ127-150 L?
-U 1 1 5CA63936
-P 4600 1100
-AR Path="/5CA63936" Ref="L?"  Part="1" 
-AR Path="/5CA65B33/5CA63936" Ref="L?"  Part="1" 
-AR Path="/5CA63886/5CA63936" Ref="L2"  Part="1" 
-F 0 "L2" H 4600 1165 50  0000 C CNN
-F 1 "DRQ127-150" H 4600 1074 50  0000 C CNN
-F 2 "eaton:eaton_drq127" H 4600 1100 50  0001 C CNN
-F 3 "" H 4600 1100 50  0001 C CNN
-	1    4600 1100
-	-1   0    0    -1  
-$EndComp
 Text Notes 9350 1900 0    50   ~ 0
 high di/dt loop
 Wire Wire Line
@@ -259,7 +225,7 @@ Connection ~ 4950 2650
 Wire Wire Line
 	4950 3150 4950 2650
 Wire Wire Line
-	4800 3150 4950 3150
+	4800 3150 4900 3150
 Wire Wire Line
 	4800 3250 4800 3150
 Wire Wire Line
@@ -271,14 +237,14 @@ Wire Wire Line
 Wire Wire Line
 	5900 3150 5900 4400
 Wire Wire Line
-	5300 3150 5900 3150
+	5300 3150 5400 3150
 Wire Wire Line
 	5300 3150 5300 3250
 Connection ~ 5300 3150
 Wire Wire Line
 	5000 3150 5000 3250
 Wire Wire Line
-	5000 3150 5300 3150
+	5000 3150 5100 3150
 Wire Wire Line
 	1950 3850 1950 1350
 Connection ~ 1950 1350
@@ -463,10 +429,6 @@ Wire Wire Line
 	7450 2000 7450 3250
 Wire Wire Line
 	7450 3250 8800 3250
-Wire Wire Line
-	7450 1350 7500 1350
-Wire Wire Line
-	8700 1350 8800 1350
 Connection ~ 8800 1350
 $Comp
 L Device:R R13
@@ -564,21 +526,135 @@ Connection ~ 6750 1350
 Wire Wire Line
 	5300 1350 5300 3150
 Wire Wire Line
-	5200 1350 5300 1350
-Wire Wire Line
 	5300 1350 6750 1350
 Connection ~ 5300 1350
-Wire Wire Line
-	4000 1350 3900 1350
-Connection ~ 3900 1350
 Wire Wire Line
 	2750 1350 3400 1350
 Wire Wire Line
 	3400 1350 3400 1800
 Connection ~ 3400 1350
 Wire Wire Line
-	3400 1350 3900 1350
-Wire Wire Line
 	3400 2100 3400 2600
 Connection ~ 3400 2600
+$Comp
+L Device:L L2
+U 1 1 5CB62A4C
+P 4900 1350
+F 0 "L2" V 5090 1350 50  0000 C CNN
+F 1 "SRP1265A-330M" V 4999 1350 50  0000 C CNN
+F 2 "bourns:bourns_srp1265a" H 4900 1350 50  0001 C CNN
+F 3 "~" H 4900 1350 50  0001 C CNN
+	1    4900 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 1350 5300 1350
+Connection ~ 4400 1350
+Wire Wire Line
+	4400 1350 4750 1350
+Wire Wire Line
+	4400 1350 4400 3250
+Wire Wire Line
+	3400 1350 4400 1350
+$Comp
+L Device:L L6
+U 1 1 5CB70FAA
+P 8050 1350
+F 0 "L6" V 8240 1350 50  0000 C CNN
+F 1 "SRP1265A-330M" V 8149 1350 50  0000 C CNN
+F 2 "bourns:bourns_srp1265a" H 8050 1350 50  0001 C CNN
+F 3 "~" H 8050 1350 50  0001 C CNN
+	1    8050 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 1350 7900 1350
+Wire Wire Line
+	8200 1350 8800 1350
+Text Label 4500 2350 0    50   ~ 0
+DRIVE
+Text Label 6100 1350 0    50   ~ 0
+DRIVE_DIODE_IN
+Text Label 6250 3250 0    50   ~ 0
+GND
+Text Label 7450 1350 1    50   ~ 0
+GND_DIODE_IN
+Text Label 5400 5750 1    50   ~ 0
+SGND
+Text Label 3400 2600 0    50   ~ 0
+EN_UVLO
+Text Label 4150 1350 0    50   ~ 0
+VIN
+Text Label 4600 3200 1    50   ~ 0
+INTVCC
+Wire Wire Line
+	4900 3250 4900 3150
+Connection ~ 4900 3150
+Wire Wire Line
+	4900 3150 4950 3150
+Wire Wire Line
+	4900 4200 4900 4600
+Connection ~ 4900 4600
+Wire Wire Line
+	4900 4600 5400 4600
+Wire Wire Line
+	5100 4200 5100 4400
+Connection ~ 5100 4400
+Wire Wire Line
+	5100 4400 5000 4400
+Wire Wire Line
+	5200 4200 5200 4400
+Connection ~ 5200 4400
+Wire Wire Line
+	5200 4400 5100 4400
+Wire Wire Line
+	5400 4200 5400 4400
+Connection ~ 5400 4400
+Wire Wire Line
+	5400 4400 5300 4400
+Wire Wire Line
+	5400 3250 5400 3150
+Connection ~ 5400 3150
+Wire Wire Line
+	5400 3150 5900 3150
+Wire Wire Line
+	5200 3250 5200 3150
+Connection ~ 5200 3150
+Wire Wire Line
+	5200 3150 5300 3150
+Wire Wire Line
+	5100 3250 5100 3150
+Connection ~ 5100 3150
+Wire Wire Line
+	5100 3150 5200 3150
+Wire Wire Line
+	4100 4300 4000 4300
+Wire Wire Line
+	4000 4300 3900 4300
+Connection ~ 4000 4300
+Wire Wire Line
+	3900 3250 4000 3250
+Wire Wire Line
+	4000 3250 4100 3250
+Connection ~ 4000 3250
+Wire Wire Line
+	4100 3250 4200 3250
+Connection ~ 4100 3250
+Wire Wire Line
+	3900 3250 3800 3250
+Wire Wire Line
+	3800 3250 3800 4300
+Wire Wire Line
+	3800 4300 3900 4300
+Connection ~ 3900 3250
+Connection ~ 3900 4300
+Text Label 3800 3250 0    50   ~ 0
+GND
+Wire Wire Line
+	4700 3250 4700 3150
+Wire Wire Line
+	4700 3150 4800 3150
+Connection ~ 4800 3150
+Text Label 10500 4500 0    50   ~ 0
+FBX
 $EndSCHEMATC

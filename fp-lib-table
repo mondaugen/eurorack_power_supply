@@ -3,4 +3,5 @@
   (lib (name eaton)(type KiCad)(uri ${KIPRJMOD}/eaton.pretty)(options "")(descr ""))
   (lib (name lt)(type KiCad)(uri ${KIPRJMOD}/lt.pretty)(options "")(descr ""))
   (lib (name bourns)(type KiCad)(uri ${KIPRJMOD}/bourns.pretty)(options "")(descr ""))
+  (lib (name generic)(type KiCad)(uri ${KIPRJMOD}/generic.pretty)(options "")(descr ""))
 )

@@ -2,4 +2,5 @@
   (lib (name v1-rescue)(type Legacy)(uri ${KIPRJMOD}/v1-rescue.lib)(options "")(descr ""))
   (lib (name lt3959)(type Legacy)(uri ${KIPRJMOD}/library/lt3959.lib)(options "")(descr ""))
   (lib (name coiltronics)(type Legacy)(uri /home/lasker/Documents/hardware_design/eurorack_power_supply/library/coiltronics.lib)(options "")(descr ""))
+  (lib (name generic)(type Legacy)(uri /home/lasker/Documents/hardware_design/eurorack_power_supply/generic.lib)(options "")(descr ""))
 )

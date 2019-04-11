@@ -230,19 +230,6 @@ F 3 "~" H 7400 1500 50  0001 C CNN
 	1    7400 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D_Schottky D?
-U 1 1 5CB5D620
-P 6250 1350
-AR Path="/5CB5D620" Ref="D?"  Part="1" 
-AR Path="/5CA65B33/5CB5D620" Ref="D1"  Part="1" 
-F 0 "D1" H 6250 1566 50  0000 C CNN
-F 1 "VISHAY 6CWQ06FN" H 6250 1475 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 6250 1350 50  0001 C CNN
-F 3 "~" H 6250 1350 50  0001 C CNN
-	1    6250 1350
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 4500 4200 4500
 Wire Wire Line
@@ -420,7 +407,6 @@ Vin2.5-24V
 Wire Wire Line
 	6400 3000 6400 1350
 Connection ~ 4500 3000
-Connection ~ 6400 1350
 Text Notes 6700 1750 0    50   ~ 0
 high di/dt loop
 Connection ~ 3400 1350
@@ -598,4 +584,16 @@ Wire Wire Line
 	5100 3100 5200 3100
 Text Label 5500 1350 0    50   ~ 0
 DIODE_IN
+$Comp
+L Device:D_Schottky D1
+U 1 1 5CB26F32
+P 6250 1350
+F 0 "D1" H 6250 1134 50  0000 C CNN
+F 1 "VISHAY 6CWQ06FN" H 6250 1225 50  0000 C CNN
+F 2 "" H 6250 1350 50  0001 C CNN
+F 3 "~" H 6250 1350 50  0001 C CNN
+	1    6250 1350
+	-1   0    0    1   
+$EndComp
+Connection ~ 6400 1350
 $EndSCHEMATC
